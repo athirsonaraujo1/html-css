@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+
+    caption {
+        background-color: black;
+        color: white;
+            font-size: 1.5em;
+            padding: 5px;
+    }
+
+    table {
+        width: 400px;
+        position: relative;
+
+
+    }
+
+    td, th {
+        border: 1px solid black ;
+        padding: 10px ;
+    }
+
+    thead, tfoot {
+        background-color: gray;
+        color: white ;
+    }
+
+    thead > tr > th {
+        position: sticky;
+        top: -1px;
+        background-color: gray;
+
+
+        /* grudar o titulo (th) na tabela ao rolar para baixo a imagem */ 
+
+    }
+    td.num {
+        text-align: right;
+
+    }
+
+    tbody > tr:nth-child(odd) {
+        background-color: rgb(72, 22, 122);
+        color: white;
+
+        /* efeito zebrado, (2) seria pulando de 2 em duas linhas, (odd)IMPAR
+        (even)PAR  */
+    }
+    tbody > tr:nth-child(even) {
+        background-color: rgb(208, 208, 105);
+        color: black;
+        
+
+    }
+
+
+    </style>
+</head>
+<body>
+    <h1> Uso de tabelas grades
+        <!-- 
+            ANATOMIA PARA TABELAS GRANDES
+
+            THEAD 
+               TH, TD, TH
+            TBODY
+            TR, TD, TH 
+            TFOOT 
+            TR, TD, TH
+        -->
+
+    </h1>
+
+    <table>
+        <caption>
+            População
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col"> Estado </th>
+                <th scope="col">População </th>
+
+            </tr>
+            <tbody>
+                <tr>
+                    <td> São paulo </td>
+                    <td class="num"> 49 919 049  </td>
+                </tr>
+
+                <tr>
+                    <td> Minas Gerais</td>
+                    <td class="num"> 23 436 737</td>
+                </tr>
+
+                <tr>
+                    <td>Rio de janeiro</td>
+                    <td class="num"> 34 637 826</td>
+                </tr>
+                <tr> 
+                    <td> Bahia </td>
+                    <td class="num"> 00 000 000</td>
+
+                </tr>
+                <tr>
+                     <td> Paraná </td>
+                     <td class="num"> 00 000 000</td>
+                </tr>
+                <tr>
+                    <td>  Rio Grande do sul</td>
+                    <td class="num"> 23 436 737</td>
+                </tr>
+
+                <tr>
+                    <td> Pernambuco</td>
+                    <td class="num"> 34 637 826</td>
+                    
+                </tr>
+                <tr> 
+                    <td> Ceará </td>
+                    <td class="num"> 00 000 000</td>
+
+                </tr>
+                <tr>
+                     <td> Pará</td>
+                     <td class="num"> 00 000 000</td>
+                </tr>
+                <tr>
+                    <td> Santa Catarina</td>
+                    <td class="num"> 23 436 737</td>
+                </tr>
+
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="num"> 34 637 826</td>
+                </tr>
+                <tr> 
+                    <td> Goias </td>
+                    <td class="num"> 00 000 000</td>
+
+                </tr>
+                <tr>
+                     <td> Amazonas </td>
+                     <td class="num"> 00 000 000</td>
+                </tr>
+                <tr>
+                    <td>  Rio Grande do sul</td>
+                    <td class="num"> 23 436 737</td>
+                </tr>
+
+                <tr>
+                    <td> Pernambuco</td>
+                    <td class="num"> 34 637 826</td>
+                    
+                </tr>
+                <tr>
+                    <td>  Rio Grande do sul</td>
+                    <td class="num"> 23 436 737</td>
+                </tr>
+
+                <tr>
+                    <td> Pernambuco</td>
+                    <td class="num"> 34 637 826</td>
+                    
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr> 
+                    <th scope="row"> Total habitantes</th>
+                    <td class="num"> <strong>0000</strong></td>
+                </tr>
+
+            </tfoot>
+        </thead>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia laboriosam aliquam doloremque et recusandae voluptas aspernatur placeat explicabo vel? Vitae tenetur minima temporibus deserunt! Tempore laudantium hic illum ipsum!Loremlorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab obcaecati modi debitis, sint non ipsa cumque qui sapiente unde nam tempora sequi delectus est, atque temporibus et explicabo excepturi necessitatibus?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia laboriosam aliquam doloremque et recusandae voluptas aspernatur placeat explicabo vel? Vitae tenetur minima temporibus deserunt! Tempore laudantium hic illum ipsum!Loremlorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab obcaecati modi debitis, sint non ipsa cumque qui sapiente unde nam tempora sequi delectus est, atque temporibus et explicabo excepturi necessitatibus?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia laboriosam aliquam doloremque et recusandae voluptas aspernatur placeat explicabo vel? Vitae tenetur minima temporibus deserunt! Tempore laudantium hic illum ipsum!Loremlorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab obcaecati modi debitis, sint non ipsa cumque qui sapiente unde nam tempora sequi delectus est, atque temporibus et explicabo excepturi necessitatibus?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia laboriosam aliquam doloremque et recusandae voluptas aspernatur placeat explicabo vel? Vitae tenetur minima temporibus deserunt! Tempore laudantium hic illum ipsum!Loremlorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab obcaecati modi debitis, sint non ipsa cumque qui sapiente unde nam tempora sequi delectus est, atque temporibus et explicabo excepturi necessitatibus?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia laboriosam aliquam doloremque et recusandae voluptas aspernatur placeat explicabo vel? Vitae tenetur minima temporibus deserunt! Tempore laudantium hic illum ipsum!Loremlorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab obcaecati modi debitis, sint non ipsa cumque qui sapiente unde nam tempora sequi delectus est, atque temporibus et explicabo excepturi necessitatibus?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia laboriosam aliquam doloremque et recusandae voluptas aspernatur placeat explicabo vel? Vitae tenetur minima temporibus deserunt! Tempore laudantium hic illum ipsum!Loremlorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab obcaecati modi debitis, sint non ipsa cumque qui sapiente unde nam tempora sequi delectus est, atque temporibus et explicabo excepturi necessitatibus?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia laboriosam aliquam doloremque et recusandae voluptas aspernatur placeat explicabo vel? Vitae tenetur minima temporibus deserunt! Tempore laudantium hic illum ipsum!Loremlorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab obcaecati modi debitis, sint non ipsa cumque qui sapiente unde nam tempora sequi delectus est, atque temporibus et explicabo excepturi necessitatibus?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium officia laboriosam aliquam doloremque et recusandae voluptas aspernatur placeat explicabo vel? Vitae tenetur minima temporibus deserunt! Tempore laudantium hic illum ipsum!Loremlorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab obcaecati modi debitis, sint non ipsa cumque qui sapiente unde nam tempora sequi delectus est, atque temporibus et explicabo excepturi necessitatibus?
+    </p>
+    
+
+</body>
+</html>
