@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+h1 {
+    background-color: darkcyan;
+    padding: 10px;
+    text-align: center;
+
+}
+
+fieldset {
+    background-color: rgba(0, 0, 255, 0.286);
+}
+
+fieldset > legend {
+    text-align: center;
+    background-color: black;
+    color: aqua;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0.596);
+    color: white;
+}
