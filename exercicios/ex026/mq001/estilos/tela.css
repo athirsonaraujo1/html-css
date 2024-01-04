@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* estilo para Telas */
+
+*{ 
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-family: 'Franklin Gothic Medium'
+    font-size: 1em;
+
+}
+
+header {
+    background-color: rgba(0, 0, 255, 0.611);
+}
+
+header > h1 {
+    text-align: center;
+}
+
+menu >  ul {
+    list-style-type: none;
+    display: inline-block;
+}
+menu li {
+    background-color: rgb(85, 78, 78);
+    color: white;
+    
+    display: inline-table;
+    padding: 5px;
+}
+
+article{
+    width: 600px;
+    display: block;
+    margin: auto;
+}
