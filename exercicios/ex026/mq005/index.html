@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mq</title>
+    
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
-        <h1>Meu site</h1>
-        <menu>
+        
+          <h1>Meu site</h1>
+          <p id="men" onclick= "clickMenu()"> MENU </p>
+        <menu id="itens">
             <ul>
                 <li><a href="#">op1</a></li>
                 <li><a href="#">op2</a></li>
@@ -31,5 +34,13 @@
 
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block')
+            itens.style.display = 'none'
+        } else {
+            itens.style.display  = 'block'
+        }
+    </script>
 </body>
 </html>

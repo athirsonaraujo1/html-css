@@ -19,6 +19,21 @@ header > h1 {
 
 }
 
+p#men {
+    background-color: rgba(0, 0, 0, 0.583);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    }
+p#men:hover {
+    background-color: rgb(60, 52, 44);
+    color: black;
+    
+
+}
+
 menu {
     display: block;
 
@@ -59,5 +74,5 @@ article > p {
     text-align: justify;
     margin-bottom: 25px;
     text-indent: 25px;
-    padding: ;
+    
 }
